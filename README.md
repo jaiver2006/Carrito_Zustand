@@ -1,5 +1,4 @@
 
-Aquí tienes un **resumen rápido** de los puntos clave:
 
 * **1. Actualización sin props (`Encabezado`):** Sucede porque el componente está suscrito de forma reactiva al store global de Zustand, el cual avisa automáticamente a los componentes conectados cuando el estado cambia.
 * **2. Alternativa con `useState`:** Obligaría a elevar el estado al componente padre (`App`) y pasar los datos mediante **props** (*prop drilling*) por todo el árbol, o bien utilizar *React Context*.
