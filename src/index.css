@@ -1,0 +1,54 @@
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.encabezado,
+.fila,
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.contenido {
+  display: flex;
+  gap: 20px;
+}
+
+.panel {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.fila {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.fila-nombre,
+.fila-detalle {
+  margin: 4px 0;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.btn-bloque {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .contenido {
+    flex-direction: column;
+  }
+}
